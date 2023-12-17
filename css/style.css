@@ -1,0 +1,222 @@
+:root {
+
+    /*== CORES PRINCIPAIS ===========================*/
+    --bd-1st-color: #FFFFFF;
+    --bd-2nd-color: #2d0064;
+    --bd-3rd-color: #EFB758;
+    --bd-4th-color: #C24229;
+    --bd-5th-color: #E1DCC9;
+
+    --font-1st-color: #000000;
+    --font-2nd-color: #333333;
+    --font-3rd-color: #767171;
+    --font-4th-color: #D9D9D9;
+
+    /*== FONTE =====================================*/
+    --font-body: 'Poppins', sans-serif;
+
+    /*== TAMANHOS DA FONTE ========================*/
+    --font-big-size: 50px;
+    --font-medium-size: 2rem;
+    --font-normal-size: 1.4rem;
+    --font-small-size: 18px;
+    --font-h1-size: 1.5rem;
+    --font-h2-size: 1.25rem;
+    
+    /*== DENSIDADE DA FONTE ======================*/
+    --font-normal-weight: 400;
+    --font-medium-weight: 500;
+    --font-semi-bold: 600; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--bd-1st-color);
+}
+
+/* .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+} */
+
+.menu-bar-icon {
+    display: none;
+}
+
+.menu-link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    color: var(--font-2nd-color);
+    font-weight: var(--font-normal-weight);
+    text-align: left;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.nav-bar-list {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.25rem;
+    overflow: hidden;
+}
+
+#dark-mode {
+    font-size: 20px;
+    color: var(--bd-2nd-color);
+}
+
+li a:hover {
+    color: var(--bd-3rd-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0;
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* background-color: blue; */
+}
+
+.informacoes-introducao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    /* margin-right: 40px; */
+}
+
+.social-media-icons > ul {
+    font-size: var(--font-medium-size);
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+.social-media-list > li a {
+    text-decoration: none;
+    color: var(--bd-3rd-color);
+}
+
+.resumo {
+    margin-left: 20px;
+}
+
+.resumo > p {
+    margin-top: 20px;
+    font-size: var(--font-small-size);
+    text-align: left;
+    width: 600px;
+    color: var(--font-1st-color);
+}
+
+.apresentacao {
+    font-size: 45px;
+    color: var(--font-1st-color);
+    font-weight: 500;
+    text-align: left;
+}
+
+.profissao {
+    font-size: var(--font-normal-size);
+    color: var(--font-3rd-color);
+}
+
+.btn-contato {
+    align-self: flex-start;
+    margin-top: 40px;
+}
+
+.btn-contato > button {
+    background-color: var(--bd-2nd-color);
+    border: none;
+    padding: 10px;
+    font-size: var(--font-normal-size);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+img {
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+}
+
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 150px;
+    height: 100vh;
+    background-color: var(--bd-2nd-color);
+}
+
+.introducao {
+    width: 70%;
+    text-align: center;
+    color: var(--bd-1st-color);
+    padding: 50px;
+}
+
+.introducao > h1 {
+    font-size: 30px;
+}
+
+.introducao > h2 {
+    font-weight: var(--font-semi-bold);
+    color: var(--bd-3rd-color);
+}
+
+.introducao > p {
+    margin-top: 20px;
+    font-size: var(--font-small-size);
+    text-align: justify;
+}
