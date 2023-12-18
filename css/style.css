@@ -6,6 +6,7 @@
     --bd-3rd-color: #EFB758;
     --bd-4th-color: #C24229;
     --bd-5th-color: #E1DCC9;
+    --bd-6th-color: #afa2c2;
 
     --font-1st-color: #000000;
     --font-2nd-color: #333333;
@@ -111,7 +112,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* background-color: blue; */
 }
 
 .informacoes-introducao {
@@ -220,3 +220,95 @@ img {
     font-size: var(--font-small-size);
     text-align: justify;
 }
+
+.qualificacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    width: 100%;
+    height: auto;
+}
+
+.qualificacoes > h1 {
+    font-size: 30px;
+}
+
+.qualificacoes > h2 {
+    color: var(--font-4th-color);
+}
+
+.titulo-tipo-qualificacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.educacao,
+.profissional {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+    padding: 10px;
+    font-size: var(--font-small-size);
+    color: var(--bd-2nd-color);
+
+    cursor: pointer;
+}
+
+.educacao > i,
+.profissional > i {
+    margin: 15px;
+    font-size: var(--font-normal-size);
+}
+
+.profissional > h2,
+.profissional > i {
+    color: var(--bd-6th-color);
+}
+
+.linha-do-tempo-educacional,
+.linha-do-tempo-profissional {
+    width: 850px;
+}
+
+.linha-do-tempo-profissional {
+    display: none;
+}
+
+.historico-educacional,
+.historico-profissional {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 390px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.historico-educacional:nth-child(odd),
+.historico-profissional:nth-child(odd) {
+    float: left;
+    clear: right;
+    text-align: right;
+}
+
+.historico-educacional:nth-child(even),
+.historico-profissional:nth-child(even) {
+    float: right;
+    clear: left;
+    text-align: left;
+}
+
+/* .periodo-curso {
+    display: inline;
+    flex-direction: row;
+    font-size: 16px;
+} */
