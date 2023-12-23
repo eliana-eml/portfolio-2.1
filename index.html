@@ -49,7 +49,7 @@
                         <h1 class="apresentacao">Olá, eu sou a Eliana</h1>
                         <h2 class="profissao">Desenvolvedora Fullstack</h2>
                         <p>
-                            Bem-vindo ao meu portfólio particular! Nele você poderá saber um pouco mais sobre mim e
+                            Bem-vindo(a) ao meu portfólio particular! Nele você poderá saber um pouco mais sobre mim e
                             encontrar alguns dos meus últimos projetos de desenvolvimento. Espero que
                             goste!
                         </p>
@@ -85,77 +85,68 @@
             <h2>Minha Jornada Pessoal</h2>
 
             <div class="titulo-tipo-qualificacao">
-                <div class="educacao">
+                <button class="educacao" id="educacao" onclick="exibirLinhaDoTempoEducacao()">
                     <i class='bx bxs-graduation'></i>
                     <h2>Educação</h2>
-                </div>
+                </button>
 
-                <div class="profissional">
+                <button class="profissional" id="profissional" onclick="exibirLinhaDoTempoProfissional()">
                     <i class='bx bxs-briefcase-alt-2'></i>
                     <h2>Profissional</h2>
-                </div>
+                </button>
             </div>
 
-            <div class="linha-do-tempo-educacional">
-                
-                <div class="historico-educacional">
-                    <h3 class="titulo-curso">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
-                    <span class="unidade-educacional">Centro Universitário Senac Santo Amaro</span>
-                    <div class="periodo-curso">
-                        <i class='bx bx-calendar'></i>
-                        <p>2023 - 2025</p>
-                    </div>
-                </div>
-    
-                <div class="historico-educacional">
-                    <h3 class="titulo-curso">Técnico em Desenvolvimento de Sistemas</h3>
-                    <span class="unidade-educacional">Escola SENAI Suíço-Brasileira Paulo Ernesto Tolle</span>
-                    <div class="periodo-curso">
-                        <i class='bx bx-calendar'></i>
-                        <p>2020 - 2021</p>
-                    </div>
-                </div>
-    
-                <div class="historico-educacional">
-                    <h3 class="titulo-curso">Auxiliar Administrativo</h3>
-                    <span class="unidade-educacional">Escola SENAI Ary Torres</span>
-                    <div class="periodo-curso">
-                        <i class='bx bx-calendar'></i>
-                        <p>2019</p>
-                    </div>
-                </div>
-    
-                <div class="historico-educacional">
-                    <h3 class="titulo-curso">Ensino Médio</h3>
-                    <span class="unidade-educacional">Escola Estadual João Ramalho</span>
-                    <div class="periodo-curso">
-                        <i class='bx bx-calendar'></i>
-                        <p>2017 - 2019</p>
-                    </div>
-                </div>
-                
-            </div>
+            <div class="container">
+                <div class="timeline">
+                    <ul class="linha-do-tempo-educacao">
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">Período: 2023 - 2025</h2>
+                                <h1>Tecnólogo em Análise e Desenvolvimento de Sistemas</h1>
+                                <p>Centro Universitário Senac Santo Amaro</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">Período: 2020 - 2021</h2>
+                                <h1>Técnico em Desenvolvimento de Sistemas</h1>
+                                <p>Escola SENAI Suíço-Brasileira Paulo Ernesto
+                                    Tolle</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">Período: 2019</h2>
+                                <h1>Auxiliar Administrativo</h1>
+                                <p>Escola SENAI Ary Torres</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">Período: 2017 - 2019</h2>
+                                <h1>Ensino Médio</h1>
+                                <p>Escola Estadual João Ramalho</p>
+                            </div>
+                        </li>
+                    </ul>
 
-            <div class="linha-do-tempo-profissional">
-                
-                <div class="historico-profissional">
-                    <h3 class="titulo-cargo">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
-                    <span class="empresa">Centro Universitário Senac Santo Amaro</span>
-                    <div class="periodo-cargo">
-                        <i class='bx bx-calendar'></i>
-                        <p>2023 - 2025</p>
-                    </div>
+                    <ul class="linha-do-tempo-profissional">
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">Período: Set, 2022 - Presente</h2>
+                                <h1>Auxiliar de Compras IV</h1>
+                                <p>Sustenidos Organização Social de Cultura</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h2 class="date">Período: Nov, 2021 - Ago, 2022</h2>
+                                <h1>Aprendiz</h1>
+                                <p>Associação Desportiva e Cultural Bandeirantes (Sustenidos)</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-    
-                <div class="historico-profissional">
-                    <h3 class="titulo-cargo">Técnico em Desenvolvimento de Sistemas</h3>
-                    <span class="empresa">Escola SENAI Suíço-Brasileira Paulo Ernesto Tolle</span>
-                    <div class="periodo-cargo">
-                        <i class='bx bx-calendar'></i>
-                        <p>2020 - 2021</p>
-                    </div>
-                </div>
-                
             </div>
 
         </section>
