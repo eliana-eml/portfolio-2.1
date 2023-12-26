@@ -387,7 +387,7 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px 0;
+    margin: 35px 0 50px 0;
 }
 
 .front-end-dev, 
@@ -415,6 +415,8 @@ img {
 
     padding: 10px;
     font-size: var(--font-small-size);
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .titulo-modulo > i,
@@ -423,6 +425,12 @@ img {
     font-size: 25px;
     color: var(--bd-2nd-color);
 }
+
+/* .front-end-conteudo ul,
+.back-end-conteudo ul,
+.ferramentas-conteudo ul {
+    display: none;
+} */
 
 .front-end-conteudo ul li > i,
 .back-end-conteudo ul li > i,
@@ -433,6 +441,78 @@ img {
     color: var(--font-4th-color);
 }
 
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.servicos > h2 {
+    font-size: 30px;
+    color: var(--bd-2nd-color);
+}
+
+.modulos-servicos {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+    width: 85%;
+}
+
+.modulos-servicos > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-color: var(--bd-1st-color);
+    padding: 25px;
+    width: 30%;
+    margin: 0 15px;
+    border-radius: 10px;
+    border: var(--font-4th-color) 1px solid;
+    /* box-shadow: 0px 5px 7px rgba(150, 146, 146, 0.2); */
+}
+
+.modulos-servicos > div:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.modulo-analise-dev > h2,
+.modulo-dev-back-end > h2,
+.modulo-dev-front-end > h2 {
+    margin: 10px 20px;
+}
+
+.btn-modulo-servico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: var(--font-semi-bold);
+    width: auto;
+    padding: 30px;
+    margin: 45px auto 0;
+    cursor: pointer;
+    
+    background-color: var(--bd-1st-color);
+    color: var(--bd-2nd-color);
+    border-radius: 10px;
+    border: var(--bd-2nd-color) 3px solid;
+}
+
+.btn-modulo-servico:hover {
+    background-color: var(--bd-2nd-color);
+    color: var(--font-4th-color);
+}
+
+.btn-modulo-servico > i {
+    font-size: 30px;
+}
  
 @media only screen and (min-width: 768px) {
     .timeline::before {

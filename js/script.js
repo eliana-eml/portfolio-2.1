@@ -28,3 +28,24 @@ function exibirLinhaDoTempoProfissional() {
     linhaTempoEducacao.style.display = "none";
     certificacoes.style.display = "none";
 }
+
+function exibirLista() {
+
+    let frontEndLista = document.getElementById("front-end-lista");
+    let backEndLista = document.querySelector('.back-end-dev');
+    let ferramentasLista = document.querySelector('.ferramentas-dev');
+    
+    frontEndLista.addEventListener("click", function exibirListaFrontEnd() {
+        
+        let lista = document.querySelector('.lista');
+
+        if (lista.style.display == "none") {
+            lista.style.display = "block";
+        } else {
+            lista.style.display = "none";
+        }
+
+    });
+
+
+}
