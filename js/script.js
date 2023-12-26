@@ -29,23 +29,38 @@ function exibirLinhaDoTempoProfissional() {
     certificacoes.style.display = "none";
 }
 
-function exibirLista() {
+function exibirListaFrontEnd() {
 
-    let frontEndLista = document.getElementById("front-end-lista");
-    let backEndLista = document.querySelector('.back-end-dev');
-    let ferramentasLista = document.querySelector('.ferramentas-dev');
-    
-    frontEndLista.addEventListener("click", function exibirListaFrontEnd() {
-        
-        let lista = document.querySelector('.lista');
+    let lista = document.querySelector('#lista-front-end');
 
-        if (lista.style.display == "none") {
-            lista.style.display = "block";
-        } else {
-            lista.style.display = "none";
-        }
+    if (lista.style.display === "none") {
+        lista.style.display = "block";
+    } else {
+        lista.style.display = "none";
+    }
 
-    });
+}
 
+function exibirListaBackEnd() {
+
+    let lista = document.querySelector('#lista-back-end');
+
+    if (lista.style.display === "none") {
+        lista.style.display = "block";
+    } else {
+        lista.style.display = "none";
+    }
+
+}
+
+function exibirListaFerramentas() {
+
+    let lista = document.querySelector('#lista-ferramentas');
+
+    if (lista.style.display === "none") {
+        lista.style.display = "block";
+    } else {
+        lista.style.display = "none";
+    }
 
 }

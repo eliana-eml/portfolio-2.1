@@ -394,6 +394,7 @@ img {
 .back-end-dev,
 .ferramentas-dev {
     padding: 20px;
+    margin: 0 10px;
     font-size: 20px;
 }
 
@@ -417,6 +418,7 @@ img {
     font-size: var(--font-small-size);
     cursor: pointer;
     margin-bottom: 10px;
+    user-select: none;
 }
 
 .titulo-modulo > i,
@@ -426,11 +428,11 @@ img {
     color: var(--bd-2nd-color);
 }
 
-/* .front-end-conteudo ul,
+.front-end-conteudo ul,
 .back-end-conteudo ul,
 .ferramentas-conteudo ul {
     display: none;
-} */
+}
 
 .front-end-conteudo ul li > i,
 .back-end-conteudo ul li > i,
