@@ -509,7 +509,7 @@ img {
 
 .btn-modulo-servico:hover {
     background-color: var(--bd-2nd-color);
-    color: var(--font-4th-color);
+    color: white;
 }
 
 .btn-modulo-servico > i {
