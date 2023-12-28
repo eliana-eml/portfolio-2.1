@@ -201,7 +201,7 @@ img {
 }
 
 .introducao {
-    width: 70%;
+    width: 80%;
     text-align: center;
     color: var(--bd-1st-color);
     padding: 50px;
@@ -459,7 +459,7 @@ img {
 .modulos-servicos {
     display: flex;
     flex-direction: row;
-    margin: 50px 0;
+    margin: 50px 0 0;
     width: 85%;
 }
 
@@ -514,6 +514,105 @@ img {
 
 .btn-modulo-servico > i {
     font-size: 30px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.projetos > h1 {
+    font-size: 30px;
+}
+
+.projetos > h2 {
+    color: var(--font-4th-color);
+}
+
+.projetos-carrousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+    margin: 40px 0;
+    /* background-color: #D9D9D9; */
+}
+
+.bxs-chevron-left,
+.bxs-chevron-right {
+    font-size: 50px;
+    color: var(--bd-2nd-color);
+    cursor: pointer;
+}
+
+.titulo-projeto {
+    font-size: 30px;
+    text-align: center;
+}
+
+.descricao-projeto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.imagem-projeto, 
+.projeto-detalhes-descricao {
+    height: 270px;
+    width: 50%;
+    margin: 0 15px;
+}
+
+.imagem-projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bd-2nd-color);
+    border-radius: 10px;
+}
+
+.imagem-projeto > i {
+    color: white;
+    font-size: 100px;
+}
+
+.projeto-detalhes-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: var(--font-small-size);
+}
+
+.projeto-detalhes {
+    list-style: none;
+    /* margin: 40px 0 0 0; */
+}
+
+.projeto-detalhes > li h3 {
+    color: var(--bd-3rd-color);
+}
+
+.projeto-detalhes > li p {
+    color: var(--font-2nd-color);
+}
+
+.pontos-carrousel {
+    background-color: #afa2c2;
+}
+
+.ponto {
+    width: 100px;
+    height: 100px;
+    background-color: #2d0064;
 }
  
 @media only screen and (min-width: 768px) {

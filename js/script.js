@@ -1,3 +1,36 @@
+// let projetoDiv = document.querySelector('#projeto');
+
+// fetch("./json/projetos.json").then((response) => {
+
+//     response.json().then((dados) => {
+        
+//         dados.projetos.map((projeto) => {
+//             projetoDiv.innerHTML +=
+//             `
+//             <h2 class="titulo-projeto">${projeto.titulo}</h2>
+//             <div class="descricao-projeto">
+//                 <div class="imagem-projeto">
+//                     ${projeto.icone}
+//                 </div>
+//                 <div class="projeto-detalhes-descricao">
+//                     <p class="descricao">${projeto.descricao}</p>  
+//                     <ul class="projeto-detalhes">
+//                         <li>
+//                             <h3>Linguagens Utilizadas:</h3>
+//                             <p>${projeto.linguagens}</p>
+//                         </li>
+//                         <li>
+//                             <h3>Tipo de Projeto:</h3>
+//                             <p>${projeto.tipo}</p>
+//                         </li>
+//                     </ul>
+//                 </div>
+//             </div>
+//             `
+//         });
+//     })
+// });
+
 window.onload = exibirLinhaDoTempoEducacao();
 
 function exibirLinhaDoTempoEducacao() {

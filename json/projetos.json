@@ -1,0 +1,58 @@
+{
+    "projetos": [
+        {
+            "id": 0,
+            "titulo": "Jogo da Memória",
+            "icone": "<i class='bx bx-code-curly'></i>",
+            "link": "https://eliana-eml.github.io/jogo-da-memoria/",
+            "descricao": "Descrição do projeto jogo da memória. Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
+            "linguagens": "HTML, CSS, JavaScript, JSON",
+            "tipo": "Front-End - Web"
+        },
+        {
+            "id": 1,
+            "titulo": "Weather Dash",
+            "icone": "<i class='bx bx-sun'></i>",
+            "link": "https://eliana-eml.github.io/weather-dash/",
+            "descricao": "Descrição do projeto weather dash",
+            "linguagens": "HTML, CSS, JavaScript",
+            "tipo": "Front-End - Web"
+        },
+        {
+            "id": 2,
+            "titulo": "Imobiliária ADIMO",
+            "icone": "<i class='bx bx-building-house'></i>",
+            "link": "",
+            "descricao": "Descrição do projeto imobiliária ADIMO",
+            "linguagens": "HTML, CSS, JavaScript",
+            "tipo": "Front-End - Web"
+        },
+        {
+            "id": 3,
+            "titulo": "Padaria By The Code",
+            "icone": "<i class='bx bx-baguette'></i>",
+            "link": "",
+            "descricao": "Descrição do projeto padaria by the code",
+            "linguagens": "Java, MySQL, JDBC",
+            "tipo": "Back-End - Desktop"
+        },
+        {
+            "id": 4,
+            "titulo": "Nota Fiscal",
+            "icone": "<i class='bx bx-note'></i>",
+            "link": "https://github.com/eliana-eml/rest-jdbc-project-nota-fiscal",
+            "descricao": "Descrição do projeto CRUD nota fiscal",
+            "linguagens": "Java, MySQL, JDBC, SpringBoot",
+            "tipo": "Back-End - Web"
+        },
+        {
+            "id": 5,
+            "titulo": "Cadastro de Clientes",
+            "icone": "<i class='bx bxs-user-account'></i>",
+            "link": "https://github.com/eliana-eml/java-web-servlet-project-cadastro-de-clientes",
+            "descricao": "Descrição do projeto CRUD cadastro de clientes",
+            "linguagens": "Java, MySQL, JDBC, SpringBoot",
+            "tipo": "Back-End - Web"
+        }
+    ]
+}
