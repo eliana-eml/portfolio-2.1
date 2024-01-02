@@ -1,36 +1,3 @@
-// let projetoDiv = document.querySelector('#projeto');
-
-// fetch("./json/projetos.json").then((response) => {
-
-//     response.json().then((dados) => {
-        
-//         dados.projetos.map((projeto) => {
-//             projetoDiv.innerHTML +=
-//             `
-//             <h2 class="titulo-projeto">${projeto.titulo}</h2>
-//             <div class="descricao-projeto">
-//                 <div class="imagem-projeto">
-//                     ${projeto.icone}
-//                 </div>
-//                 <div class="projeto-detalhes-descricao">
-//                     <p class="descricao">${projeto.descricao}</p>  
-//                     <ul class="projeto-detalhes">
-//                         <li>
-//                             <h3>Linguagens Utilizadas:</h3>
-//                             <p>${projeto.linguagens}</p>
-//                         </li>
-//                         <li>
-//                             <h3>Tipo de Projeto:</h3>
-//                             <p>${projeto.tipo}</p>
-//                         </li>
-//                     </ul>
-//                 </div>
-//             </div>
-//             `
-//         });
-//     })
-// });
-
 window.onload = exibirLinhaDoTempoEducacao();
 
 function exibirLinhaDoTempoEducacao() {
@@ -53,10 +20,10 @@ function exibirLinhaDoTempoProfissional() {
     let linhaTempoEducacao = document.querySelector('.linha-do-tempo-educacao');
     let linhaTempoProfissional = document.querySelector('.linha-do-tempo-profissional');
     let certificacoes = document.querySelector('.certificacoes');
-    
+
     document.getElementById('educacao').style.color = "#afa2c2";
     document.getElementById('profissional').style.color = "#2d0064";
-    
+
     linhaTempoProfissional.style.display = "block";
     linhaTempoEducacao.style.display = "none";
     certificacoes.style.display = "none";
@@ -97,3 +64,55 @@ function exibirListaFerramentas() {
     }
 
 }
+
+let projetoDiv = document.querySelector('.projetos-conteudo');
+
+fetch("./json/projetos.json").then((response) => {
+
+    response.json().then((dados) => {
+
+        dados.projetos.map((projeto) => {
+            projetoDiv.innerHTML +=
+                `
+                <div class="slide swiper-slide">
+                    <h2 class="titulo-projeto">${projeto.titulo}</h2>
+                    <div class="projeto-detalhes">
+                        <a href="${projeto.link}">
+                            <img src="${projeto.img}" alt="" class="image">
+                        </a>
+                        <ul class="projeto-descricao">
+                            <li>
+                                <h3>Descrição do Projeto:</h3>
+                                <p>
+                                    ${projeto.descricao}
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Linguagens e Tecnologias Utilizadas:</h3>
+                                <p>${projeto.linguagens}</p>
+                            </li>
+                            <li>
+                                <h3>Tipo de Projeto:</h3>
+                                <p>${projeto.tipo}</p>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            `
+        });
+    })
+});
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});

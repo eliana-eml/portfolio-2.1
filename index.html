@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -61,7 +62,7 @@
                 </div>
 
                 <div class="foto-perfil">
-                    <img src="./img/pic.jpg" alt="Eliana Lima">
+                    <img src="./img/pic.jpg" alt="Eliana Lima" class="foto-perfil-eliana">
                 </div>
 
             </div>
@@ -78,7 +79,15 @@
                     dia mais desafiada a progredir profissionalmente e pessoalmente, e, por mais que me aprofunde na
                     área, apenas sinto que só estou começando a descobrir sobre esse mundo.
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dicta. Dolore similique nulla ipsum, iste eaque blanditiis enim assumenda molestiae? Fugiat ex voluptatem natus necessitatibus, similique quasi reprehenderit dignissimos ipsam quam dolor reiciendis, repellat at delectus officia consequuntur distinctio earum a rem nihil, autem deleniti nobis unde sapiente amet. Perferendis, autem sequi. Unde sint voluptatibus, aliquam deserunt amet omnis perferendis. Enim obcaecati accusantium modi maiores expedita quia laboriosam temporibus corporis ratione sapiente, laudantium iure fuga neque. Ipsa qui deleniti quas nisi ducimus! Minima est, officiis voluptatem illum doloribus, ipsum id deserunt deleniti quae aliquam, perspiciatis omnis cupiditate molestiae magni molestias?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dicta. Dolore similique nulla
+                    ipsum, iste eaque blanditiis enim assumenda molestiae? Fugiat ex voluptatem natus necessitatibus,
+                    similique quasi reprehenderit dignissimos ipsam quam dolor reiciendis, repellat at delectus officia
+                    consequuntur distinctio earum a rem nihil, autem deleniti nobis unde sapiente amet. Perferendis,
+                    autem sequi. Unde sint voluptatibus, aliquam deserunt amet omnis perferendis. Enim obcaecati
+                    accusantium modi maiores expedita quia laboriosam temporibus corporis ratione sapiente, laudantium
+                    iure fuga neque. Ipsa qui deleniti quas nisi ducimus! Minima est, officiis voluptatem illum
+                    doloribus, ipsum id deserunt deleniti quae aliquam, perspiciatis omnis cupiditate molestiae magni
+                    molestias?
                 </p>
             </div>
         </section>
@@ -323,44 +332,22 @@
             <h1>Projetos</h1>
             <h2>Meu Portfolio</h2>
 
-            <div class="projetos-carrousel">
-                <i class='bx bxs-chevron-left'></i>
-                <div class="projeto" id="projeto">
-                    <h2 class="titulo-projeto">Título do Projeto</h2>
-                    <div class="descricao-projeto">
-                        <div class="imagem-projeto">
-                            <i class='bx bx-code-alt'></i>
-                        </div>
-                        <div class="projeto-detalhes-descricao">
-                            <p class="descricao">Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.</p>  
-                            <ul class="projeto-detalhes">
-                                <li>
-                                    <h3>Linguagens Utilizadas:</h3>
-                                    <p>Java, MySQL, JDBC</p>
-                                </li>
-                                <li>
-                                    <h3>Tipo de Projeto:</h3>
-                                    <p>Desktop - Back-End</p>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="container-projetos">
+                <div class="projetos-slider mySwiper">
+                    <div class="projetos-conteudo swiper-wrapper">
+                        
                     </div>
-                </div>
-                <i class='bx bxs-chevron-right'></i>
-                <!-- <div class="pontos-carrousel">
-                    <span class="ponto">.</span>
-                    <span class="ponto">.</span>
-                    <span class="ponto">.</span>
-                    <span class="ponto">.</span>
-                    <span class="ponto">.</span>
-                    <span class="ponto">.</span>
-                </div> -->
+                    <div class="swiper-button-next nav-btn"></div>
+                    <div class="swiper-button-prev nav-btn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>  
             </div>
 
         </section>
 
     </main>
     <footer></footer>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
