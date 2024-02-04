@@ -25,7 +25,7 @@
                     <li><a href="#sobre" class="menu-link">Sobre</a></li>
                     <li><a href="#desenvolvimento" class="menu-link">Desenvolvimento</a></li>
                     <li><a href="#projetos" class="menu-link">Projetos</a></li>
-                    <li><a href="#" class="menu-link">Contato</a></li>
+                    <li><a href="#contato" class="menu-link">Contato</a></li>
                     <li><a href="#" class="menu-link"><i class='bx bx-moon'></i></a></li>
                 </ul>
             </div>
@@ -52,7 +52,7 @@
                         <h2 class="profissao">Desenvolvedora Fullstack</h2>
                         <p>
                             Bem-vindo(a) ao meu portfólio particular! Nele você poderá saber um pouco mais sobre mim e
-                            encontrar alguns dos meus últimos projetos de desenvolvimento. Espero que
+                            encontrar alguns dos meus últimos projetos de desenvolvimento. <br> Espero que
                             goste!
                         </p>
                         <div class="btn-contato">
@@ -300,29 +300,131 @@
                 <div class="modulos-servicos">
 
                     <div class="modulo-analise-dev">
-                        <h2>Análise e Desenvolvimento de Sistemas</h2>
+                        <div class="titulo-servico">
+                            <h2>Análise e Desenvolvimento de Sistemas</h2>
+                        </div>
                         <button class="btn-modulo-servico" id="btn-analise-dev">
                             <p>Ver mais</p>
                             <i class='bx bx-right-arrow-alt'></i>
                         </button>
+
+                        <div class="modal-servicos">
+                            <div class="modal-conteudo">
+                                <i class='bx bx-x btn-fechar-popup'></i>
+                                <h2>Análise e Desenvolvimento de Sistemas</h2>
+                                <ul class="popup-lista">
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>Análise de aplicações</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>Identificação de requisitos funcionais e não funcionais de um sistema</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>Diagrama de caso de uso</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="modulo-dev-back-end">
-                        <h2>Desenvolvimento Back-End</h2>
+                        <div class="titulo-servico">
+                            <h2>Desenvolvimento Back-End</h2>
+                        </div>
                         <button class="btn-modulo-servico" id="btn-back-end">
                             <p>Ver mais</p>
                             <i class='bx bx-right-arrow-alt'></i>
                         </button>
+
+                        <div class="modal-servicos">
+                            <div class="modal-conteudo">
+                                <i class='bx bx-x btn-fechar-popup'></i>
+                                <h2>Desenvolvimento Back-End</h2>
+                                <ul class="popup-lista">
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>Orientação à objetos</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>Documentação com Javadoc</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>Banco de dados relacional</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>DDL (Data Definition Language)</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>DML (Data Manipulation Language)</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>Modelagem conceitual, lógica e física de um banco de dados</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
+
                     <div class="modulo-dev-front-end">
-                        <h2>Desenvolvimento Front-End</h2>
+                        <div class="titulo-servico">
+                            <h2>Desenvolvimento Front-End</h2>
+                        </div>
                         <button class="btn-modulo-servico" id="btn-front-end">
                             <p>Ver mais</p>
                             <i class='bx bx-right-arrow-alt'></i>
                         </button>
+
+                        <div class="modal-servicos">
+                            <div class="modal-conteudo">
+                                <i class='bx bx-x btn-fechar-popup'></i>
+                                <h2>Desenvolvimento Front-End</h2>
+                                <ul class="popup-lista">
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>Mobile-First</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-servico">
+                                            <i class='bx bxs-check-circle'></i>
+                                            <p>Design responsivo</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
-
 
             </div>
 
@@ -335,13 +437,56 @@
             <div class="container-projetos">
                 <div class="projetos-slider mySwiper">
                     <div class="projetos-conteudo swiper-wrapper">
-                        
+
                     </div>
                     <div class="swiper-button-next nav-btn"></div>
                     <div class="swiper-button-prev nav-btn"></div>
                     <div class="swiper-pagination"></div>
-                </div>  
+                </div>
             </div>
+
+        </section>
+
+        <section class="contato" id="contato">
+
+            <h1>Contato</h1>
+
+            <div class="redes-sociais">
+
+                <ul class="link-redes">
+                    <li>
+                        <a href="https://github.com/eliana-eml">
+                            <i class='bx bxl-github'></i>
+                            <p>GitHub</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/eliana-moura-lima/">
+                            <i class='bx bxl-linkedin'></i>
+                            <p>LinkedIn</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:eml.eliana57@hotmail.com">
+                            <i class='bx bx-envelope'></i>
+                            <p>E-mail</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <a href="#home">
+                <button class="btn-voltar-topo">
+                    <i class='bx bxs-chevrons-up'></i>
+                    <p>Voltar ao topo</p>
+                    <i class='bx bxs-chevrons-up'></i>
+                </button>
+            </a>
+
+            <p class="rodape">
+                Copyright © Eliana Lima. Todos os direitos reservados.
+            </p>
 
         </section>
 

@@ -3,16 +3,16 @@
         {
             "id": 0,
             "titulo": "Padaria By The Code",
-            "img": "./img/img-2.jpg",
+            "img": "./img/capa-projeto-back-end-padaria.jpg",
             "link": "#",
             "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium.",
-            "linguagens": "Java, MySQL, JDBC, MVC, Maven, Orientação à Objetos, SQL DDL e DML",
+            "linguagens": "Java, MySQL, JDBC, MVC, Maven, Orientação à Objetos, SQL DDL e DML, Javadoc",
             "tipo": "Back-End - Desktop"
         },
         {
             "id": 1,
             "titulo": "Weather Dash",
-            "img": "./img/img-1.jpg",
+            "img": "./img/capa-projeto-front-end-weather-dash.jpg",
             "link": "https://eliana-eml.github.io/weather-dash/",
             "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
             "linguagens": "HTML, CSS, JavaScript",
@@ -21,7 +21,7 @@
         {
             "id": 2,
             "titulo": "Jogo da Memória",
-            "img": "./img/img-2.jpg",
+            "img": "./img/capa-projeto-front-end-jogo-da-memoria.jpg",
             "link": "https://eliana-eml.github.io/jogo-da-memoria/",
             "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
             "linguagens": "HTML, CSS, JavaScript, JSON",
@@ -30,7 +30,7 @@
         {
             "id": 3,
             "titulo": "Imobiliária ADIMO",
-            "img": "./img/img-1.jpg",
+            "img": "./img/capa-projeto-front-end-imobiliaria.jpg",
             "link": "#",
             "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
             "linguagens": "HTML, CSS, JavaScript",
@@ -39,16 +39,16 @@
         {
             "id": 4,
             "titulo": "Nota Fiscal",
-            "img": "./img/img-2.jpg",
+            "img": "./img/capa-projeto-back-end-nota-fiscal.jpg",
             "link": "https://github.com/eliana-eml/rest-jdbc-project-nota-fiscal",
             "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
-            "linguagens": "Java, MySQL, JDBC, SpringBoot",
+            "linguagens": "Java, MySQL, JDBC, MVC, SpringBoot, Maven",
             "tipo": "Back-End - Web"
         },
         {
             "id": 5,
             "titulo": "Cadastro de Clientes",
-            "img": "./img/img-1.jpg",
+            "img": "./img/capa-projeto-back-end-clientes.jpg",
             "link": "https://github.com/eliana-eml/java-web-servlet-project-cadastro-de-clientes",
             "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
             "linguagens": "Java, MySQL, JDBC, SpringBoot",

@@ -65,6 +65,27 @@ function exibirListaFerramentas() {
 
 }
 
+// const modalViews = document.querySelectorAll('.modal-servicos'),
+//       modalBtns = document.querySelectorAll('.btn-modulo-servico'),
+//       modalCloses = document.querySelectorAll('.btn-fechar-popup')
+
+// let modal = function(modalClick) {
+//     modalViews[modalClick].classList.add('active-modal')
+// }
+
+// modalBtns.forEach((modalBtn, i) => {
+//     modalBtn.addEventListener('click', () => {
+//         modal(i)
+//     })
+// })
+
+// modalCloses.forEach((modalClose) => {
+//     modalClose.addEventListener('click', () => {
+//         modalViews.classList.remove('active-modal')
+//     })
+// })
+
+
 let projetoDiv = document.querySelector('.projetos-conteudo');
 
 fetch("./json/projetos.json").then((response) => {
@@ -78,7 +99,7 @@ fetch("./json/projetos.json").then((response) => {
                     <h2 class="titulo-projeto">${projeto.titulo}</h2>
                     <div class="projeto-detalhes">
                         <a href="${projeto.link}">
-                            <img src="${projeto.img}" alt="" class="image">
+                            <img src="${projeto.img}" alt="imagem-projeto" class="image">
                         </a>
                         <ul class="projeto-descricao">
                             <li>
@@ -97,8 +118,8 @@ fetch("./json/projetos.json").then((response) => {
                             </li>
                         </ul>
                     </div>
-            </div>
-            `
+                </div>
+                `
         });
     })
 });
