@@ -468,6 +468,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 100px 0;
+    width: 100%;
 }
 
 .servicos > h2 {
@@ -481,7 +482,7 @@ main {
     justify-content: center;
     /* align-items: center; */
     margin: 50px 0;
-    width: 85%;
+    width: 80%;
 }
 
 .modulos-servicos > div {
@@ -886,8 +887,8 @@ main {
     }
 
     .foto-perfil-eliana {
-        width: 250px;
-        height: 250px;
+        width: 220px;
+        height: 220px;
     }
 
     .btn-contato {
@@ -964,8 +965,8 @@ main {
     .modulos-desenvolvimento {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        margin: 35px 0 50px 0;
+        /* flex-wrap: wrap; */
+        /* margin: 35px 0 50px 0; */
     }
     
     .front-end-dev, 
@@ -976,6 +977,183 @@ main {
         font-size: 20px;
     }
 
+    .titulo-modulo {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    .titulo-modulo h1 {
+        font-size: 22px;
+    }
+
+    .front-end-conteudo ul li,
+    .back-end-conteudo ul li,
+    .ferramentas-conteudo ul li {
+        font-size: 20px;
+        margin: 0 20px;
+        text-align: center;
+        /* color: var(--font-4th-color); */
+    }
+
+    /* SERVIÇOS */
+
+    .servicos {
+        width: 100%;
+    }
+
+    .modulos-servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px auto;
+        width: 100%;
+    }
+    
+    .modulos-servicos > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    
+        background-color: var(--bd-1st-color);
+        padding: 25px 20px;
+        width: 80%;
+        height: auto;
+        margin: 15px 0;
+    }
+    
+    .btn-modulo-servico {
+        padding: 20px;
+        margin: 45px 0;
+    }
+
+    /* PROJETOS */
+
+    .projetos-slider {
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+        padding: 50px 0;
+        overflow: hidden;
+    }
+    
+    .projetos-slider .image {
+        height: 200px;
+        width: 310px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    
+    .projetos-slider .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .slide .projeto-descricao {
+        text-align: center;
+        padding: 0 100px 0 60px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--font-1st-color);
+        list-style: none;   
+    }
+    
+    .projeto-descricao li {
+        margin: 0 0 15px 0;
+    }
+    
+    .projeto-descricao li h3 {
+        margin-top: 20px;
+        font-size: 20px;
+        color: var(--bd-3rd-color);
+    }
+    
+    .projeto-descricao li p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .slide .projeto-detalhes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-btn {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        transform: translateY(30px);
+        cursor: pointer;
+        /* background-color: rgba(0, 0, 0, 0.1); */
+        transition: 0.2s;
+    }
+        
+    .nav-btn::after,
+    .nav-btn::before {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--bd-2nd-color);
+    }
+
+    .link-redes > li i {
+        font-size: 30px;
+    }
+
+    .link-redes > li p {
+        display: none;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide .projeto-detalhes {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide .projeto-descricao {
+        margin-left: 25px;
+    }
+    
+    .projeto-descricao li h3 {
+        margin: 20px 0;
+    }
+    
+    .projeto-descricao li p {
+        width: 280px;
+        margin: 10px 30px;
+    }
+
+    .nav-btn::after,
+    .nav-btn::before {
+        visibility: hidden;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--bd-2nd-color);
+    }
 }
 
 @media only screen and (min-width: 768px) {  
