@@ -12,6 +12,8 @@
     --font-2nd-color: #333333;
     --font-3rd-color: #767171;
     --font-4th-color: #D9D9D9;
+    --font-5th-color: #FFFFFF;
+    --font-6th-color: #2d0064;
 
     /*== FONTE =====================================*/
     --font-body: 'Poppins', sans-serif;
@@ -30,6 +32,24 @@
     --font-semi-bold: 600; 
 }
 
+body.modo-escuro {
+    --bd-1st-color: #030716;
+    --bd-2nd-color: #492673;
+    --bd-3rd-color: #EFB758;
+    --bd-4th-color: #C24229;
+    --bd-5th-color: #E1DCC9;
+    --bd-6th-color: #afa2c2;
+
+    --font-1st-color: #FFFFFF;
+    --font-2nd-color: #FFFFFF;
+    --font-3rd-color: #767171;
+    --font-4th-color: #EFB758;
+    --font-5th-color: #FFFFFF;
+    --font-6th-color: hsl(267, 50%, 45%);
+    
+    --transparent-color: rgba(255, 255, 255, 0.8);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,6 +64,9 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    background-color: var(--bd-1st-color);
+    color: var(--font-5th-color);
+    transition: background .3s linear;
 }
 
 /* ::-webkit-scrollbar {
@@ -71,6 +94,7 @@ header {
     width: 100%;
     height: 60px;
     background-color: var(--bd-1st-color);
+    transition: background .3s linear;
 }
 
 /* .nav-container {
@@ -82,6 +106,10 @@ header {
 .menu-bar-icon,
 .side-menu {
     display: none;
+}
+
+.bx-menu {
+    color: var(--font-6th-color);
 }
 
 .menu-link {
@@ -189,7 +217,7 @@ main {
     border: none;
     padding: 10px;
     font-size: var(--font-normal-size);
-    color: white;
+    color: var(--font-5th-color);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -223,7 +251,7 @@ main {
 .introducao {
     width: 80%;
     text-align: center;
-    color: var(--bd-1st-color);
+    color: var(--font-5th-color);
     padding: 50px;
 }
 
@@ -254,6 +282,7 @@ main {
 
 .qualificacoes > h1 {
     font-size: 30px;
+    color: var(--font-1st-color);
 }
 
 .qualificacoes > h2 {
@@ -277,9 +306,9 @@ main {
     margin: 20px;
     padding: 10px;
     font-size: var(--font-small-size);
-    color: var(--bd-2nd-color);
+    color: var(--font-6th-color);
     border: none;
-    background-color: white;
+    background-color: var(--bd-1st-color);
     cursor: pointer;
 }
 
@@ -317,7 +346,7 @@ main {
 .timeline ul li {
     padding: 20px;
     background-color: var(--bd-2nd-color);
-    color: white;
+    color: var(--font-5th-color);
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -358,7 +387,7 @@ main {
     margin: 10px;
     padding: 10px;
     font-size: 30px;
-    color: var(--bd-2nd-color);
+    color: var(--font-6th-color);
 }
 
 .certificados {
@@ -381,10 +410,12 @@ main {
     font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 2px;
+    color: var(--font-6th-color);
 }
 
 .desenvolvimento > h1 {
     font-size: 30px;
+    color: var(--font-1st-color);
 }
 
 .desenvolvimento > h2 {
@@ -443,13 +474,14 @@ main {
 .titulo-modulo > h1 {
     margin: 0 10px;
     font-size: 25px;
-    color: var(--bd-2nd-color);
+    color: var(--font-6th-color);
 }
 
 .front-end-conteudo ul,
 .back-end-conteudo ul,
 .ferramentas-conteudo ul {
     display: none;
+    color: var(--font-1st-color);
 }
 
 .front-end-conteudo ul li > i,
@@ -472,7 +504,7 @@ main {
 
 .servicos > h2 {
     font-size: 30px;
-    color: var(--bd-2nd-color);
+    color: var(--font-6th-color);
 }
 
 .modulos-servicos {
@@ -515,13 +547,14 @@ main {
     padding: 10px 15px;
     font-size: 15px;
     margin: 0 auto;
+    color: var(--font-1st-color);
 }
 
-.titulo-servico > i {
+/* .titulo-servico > i {
     font-size: 100px;
     margin: 10px 0 0;
-    color: var(--font-4th-color);
-}
+    color: var(--font-2nd-color);
+} */
 
 .btn-modulo-servico {
     display: flex;
@@ -536,14 +569,14 @@ main {
     cursor: pointer;
     
     background-color: var(--bd-1st-color);
-    color: var(--bd-2nd-color);
+    color: var(--font-6th-color);
     border-radius: 10px;
-    border: var(--bd-2nd-color) 3px solid;
+    border: var(--font-6th-color) 3px solid;
 }
 
 .btn-modulo-servico:hover {
-    background-color: var(--bd-2nd-color);
-    color: white;
+    background-color: var(--font-6th-color);
+    color: var(--font-5th-color);
 }
 
 .btn-modulo-servico > i {
@@ -577,7 +610,7 @@ main {
     display: flex;
     text-align: left;
     flex-direction: column;
-    background-color: #FFFFFF;
+    background-color: var(--bd-1st-color);
     width: 420px;
     margin: 100px 25px;
     padding: 30px 30px 60px;
@@ -651,7 +684,7 @@ main {
 }
 
 .titulo-projeto {
-    color: var(--bd-2nd-color);
+    color: var(--font-6th-color);
 }
 
 .projetos-slider {
@@ -715,15 +748,12 @@ main {
 .nav-btn::before {
     font-size: 20px;
     font-weight: 600;
-    color: var(--bd-2nd-color);
+    color: var(--font-6th-color);
 }
 
-.swiper-pagination-bullet {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #2d0064;
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--font-6th-color);
+    opacity: 1;
 }
 
 .contato {
@@ -733,7 +763,7 @@ main {
     align-items: center;
     
     background-color: var(--bd-2nd-color);
-    color: var(--bd-1st-color);
+    color: var(--font-5th-color);
     height: auto;
     width: 100%;
     margin: 100px 0 0;
@@ -757,7 +787,7 @@ main {
     align-items: center;
     margin: 50px 20px;
     font-size: 18px;
-    color: var(--bd-1st-color);
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -776,11 +806,11 @@ main {
     align-items: center;
     padding: 10px;
     font-size: 18px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--font-5th-color);
     border-radius: 10px;
     background: none;
     cursor: pointer;
-    color: var(--bd-1st-color);
+    color: var(--font-5th-color);
 }
 
 .contato a {
@@ -821,14 +851,14 @@ main {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    box-shadow: 1px 0px 2.5px var(--font-2nd-color);
+    box-shadow: 1px 0px 2.5px hsl(227, 10%, 5%);
 }
 
 .nav-mobile-lista li a {
     padding: 15px 15px 15px 40px;
     text-decoration: none;
     font-size: 19px;
-    color: var(--bd-1st-color);
+    color: var(--font-5th-color);
     display: flex;
     align-items: center;
     transition: 0.3s;
@@ -968,7 +998,7 @@ main {
     .introducao {
         width: 100%;
         text-align: center;
-        color: var(--bd-1st-color);
+        color: var(--font-5th-color);
         padding: 30px 10px;
     }
     

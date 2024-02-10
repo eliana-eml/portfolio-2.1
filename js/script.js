@@ -1,3 +1,19 @@
+let icone = document.querySelector(".modo-escuro");
+let iconeTroca = document.querySelector(".icone-tema");
+
+icone.onclick = function() {
+    
+    document.body.classList.toggle("modo-escuro");
+
+    if (document.body.classList.contains("modo-escuro")) {
+        iconeTroca.classList.remove("bxs-moon");
+        iconeTroca.classList.add("bxs-sun");
+    } else {
+        iconeTroca.classList.remove("bxs-sun");
+        iconeTroca.classList.add("bxs-moon");
+    }
+}
+
 function openNav() {
     document.getElementById("nav-mobile-lista").style.width = "270px";
 }
@@ -14,8 +30,8 @@ function exibirLinhaDoTempoEducacao() {
     let linhaTempoProfissional = document.querySelector('.linha-do-tempo-profissional');
     let certificacoes = document.querySelector('.certificacoes');
 
-    document.getElementById('educacao').style.color = "#2d0064";
-    document.getElementById('profissional').style.color = "#afa2c2";
+    document.getElementById('educacao').style.color = "var(--font-6th-color)";
+    document.getElementById('profissional').style.color = "var(--bd-6th-color)";
 
     linhaTempoEducacao.style.display = "block";
     linhaTempoProfissional.style.display = "none";
@@ -29,8 +45,8 @@ function exibirLinhaDoTempoProfissional() {
     let linhaTempoProfissional = document.querySelector('.linha-do-tempo-profissional');
     let certificacoes = document.querySelector('.certificacoes');
 
-    document.getElementById('educacao').style.color = "#afa2c2";
-    document.getElementById('profissional').style.color = "#2d0064";
+    document.getElementById('educacao').style.color = "var(--bd-6th-color)";
+    document.getElementById('profissional').style.color = "var(--font-6th-color)";
 
     linhaTempoProfissional.style.display = "block";
     linhaTempoEducacao.style.display = "none";
@@ -143,5 +159,5 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
+    }
 });
