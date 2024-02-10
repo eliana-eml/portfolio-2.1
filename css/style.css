@@ -79,7 +79,8 @@ header {
     align-items: end;
 } */
 
-.menu-bar-icon {
+.menu-bar-icon,
+.side-menu {
     display: none;
 }
 
@@ -351,11 +352,10 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-
 }
 
 .certificacoes > h2 {
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
     font-size: 30px;
     color: var(--bd-2nd-color);
@@ -363,13 +363,12 @@ main {
 
 .certificados {
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    
+    flex-direction: row;
+    width: 70%;
 }
 
 .curso {
-    margin: 10px auto;
+    margin: 10px 30px;
     padding: 20px;
     background-color: var(--font-4th-color);
     color: var(--bd-2nd-color);
@@ -803,6 +802,64 @@ main {
     margin: 50px 0 10px;
 }
 
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav-mobile-lista {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--bd-2nd-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 1px 0px 2.5px var(--font-2nd-color);
+}
+
+.nav-mobile-lista li a {
+    padding: 15px 15px 15px 40px;
+    text-decoration: none;
+    font-size: 19px;
+    color: var(--bd-1st-color);
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.nav-mobile-lista li a i {
+    margin: 0 10px;
+}
+
+.nav-mobile-lista a:hover {
+    color: var(--bd-3rd-color);
+}
+
+.nav-mobile-lista .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#closeBtn {
+    cursor: pointer;
+    color: var(--bd-pri-cor);
+}
+
+@media screen and (max-height: 450px) {
+    .nav-mobile-lista {padding-top: 15px;}
+    .nav-mobile-lista a {font-size: 18px;}
+}
+
 @media only screen and (max-width: 1200px) {
     
     .nav-bar-menu {
@@ -942,6 +999,43 @@ main {
         padding: 10px;
     }
 
+    .certificacoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    
+    .certificacoes > h2 {
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        color: var(--bd-2nd-color);
+    }
+    
+    .certificados {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .curso {
+        margin: 10px 0;
+        padding: 20px;
+        background-color: var(--font-4th-color);
+        color: var(--bd-2nd-color);
+        width: 100%;
+        border-radius: 0px 20px 20px 20px;
+    }
+    
+    .curso .date {
+        font-size: 13px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
     /* DESENVOLVIMENTO */
 
     .desenvolvimento > h1 {
@@ -1004,8 +1098,10 @@ main {
 
     .modulos-servicos {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         margin: 50px auto;
         width: 100%;
     }
@@ -1019,7 +1115,7 @@ main {
     
         background-color: var(--bd-1st-color);
         padding: 25px 20px;
-        width: 80%;
+        width: 50%;
         height: auto;
         margin: 15px 0;
     }
@@ -1121,6 +1217,30 @@ main {
 
 @media only screen and (max-width: 650px) {
 
+    .modulos-servicos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        width: 100%;
+    }
+    
+    .modulos-servicos > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    
+        background-color: var(--bd-1st-color);
+        padding: 25px 20px;
+        width: 80%;
+        height: auto;
+        margin: 15px 0;
+    }
+
     .slide {
         display: flex;
         justify-content: center;
@@ -1218,43 +1338,6 @@ main {
         position: absolute;
         top: -30px;
         color: var(--bd-2nd-color);
-    }
-
-    .certificacoes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-    }
-    
-    .certificacoes > h2 {
-        margin: 10px;
-        padding: 10px;
-        font-size: 30px;
-        color: var(--bd-2nd-color);
-    }
-    
-    .certificados {
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-    }
-    
-    .curso {
-        margin: 10px 30px;
-        padding: 20px;
-        background-color: var(--font-4th-color);
-        color: var(--bd-2nd-color);
-        width: 100%;
-        border-radius: 0px 20px 20px 20px;
-    }
-    
-    .curso .date {
-        font-size: 13px;
-        font-weight: 300;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
     }
 
 }

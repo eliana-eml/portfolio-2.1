@@ -16,9 +16,62 @@
 <body id="home">
     <header>
         <nav class="nav-container">
-            <div class="menu-bar-icon">
-                <i class='bx bx-menu'></i>
+
+            <div id="side-menu" class="side-menu">
+
+                <div class="menu-bar-icon">
+                    <i class='bx bx-menu' onclick="openNav()"></i>
+                </div>
+
+                <div id="nav-mobile-lista" class="nav-mobile-lista">
+                    <ul>
+                        <li class="nav-menu-mobile">
+                            <a>
+                                <i class='bx bx-x menu_link' onclick="closeNav()" id="closeBtn">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="nav-menu-mobile">
+                            <a href="#home" class="menu_link" onclick="closeNav()">
+                                <i class='bx bx-home'></i>
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-menu-mobile">
+                            <a href="#sobre" class="menu_link" onclick="closeNav()">
+                                <i class='bx bxs-user-detail'></i>
+                                <p>Sobre</p>
+                            </a>
+                        </li>
+                        <li class="nav-menu-mobile">
+                            <a href="#desenvolvimento" class="menu_link" onclick="closeNav()">
+                                <i class='bx bx-code-alt'></i>
+                                <p>Desenvolvimento</p>
+                            </a>
+                        </li>
+                        <li class="nav-menu-mobile">
+                            <a href="#projetos" class="menu_link" onclick="closeNav()">
+                                <i class='bx bx-devices'></i>
+                                <p>Projetos</p>
+                            </a>
+                        </li>
+                        <li class="nav-menu-mobile">
+                            <a href="#contato" class="menu_link" onclick="closeNav()">
+                                <i class='bx bx-envelope'></i>
+                                <p>Contato</p>
+                            </a>
+                        </li>
+                        <li class="nav-menu-mobile">
+                            <a href="#" class="menu_link" onclick="closeNav()">
+                                <i class='bx bx-moon'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+
+
             <div class="nav-bar-menu">
                 <ul class="nav-bar-list">
                     <li><a href="#home" class="menu-link">Home</a></li>
