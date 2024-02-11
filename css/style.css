@@ -467,7 +467,7 @@ main {
     font-size: var(--font-small-size);
     cursor: pointer;
     margin-bottom: 10px;
-    user-select: none;
+    /* user-select: none; */
 }
 
 .titulo-modulo > i,
@@ -480,7 +480,7 @@ main {
 .front-end-conteudo ul,
 .back-end-conteudo ul,
 .ferramentas-conteudo ul {
-    display: none;
+    display: block;
     color: var(--font-1st-color);
 }
 
@@ -514,6 +514,7 @@ main {
     /* align-items: center; */
     margin: 50px 0;
     width: 80%;
+    color: var(--font-1st-color);
 }
 
 .modulos-servicos > div {
@@ -669,6 +670,7 @@ main {
 
 .projetos > h1 {
     font-size: 30px;
+    color: var(--font-1st-color);
 }
 
 .projetos > h2 {

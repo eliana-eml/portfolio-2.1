@@ -14,6 +14,23 @@ icone.onclick = function() {
     }
 }
 
+let iconeMobile = document.querySelector(".modo-escuro-mobile");
+let iconeTrocaMobile = document.querySelector(".icone-tema-mobile");
+
+iconeMobile.onclick = function() {
+    
+    document.body.classList.toggle("modo-escuro");
+
+    if (document.body.classList.contains("modo-escuro")) {
+        iconeTrocaMobile.classList.remove("bxs-moon");
+        iconeTrocaMobile.classList.add("bxs-sun");
+    } else {
+        iconeTrocaMobile.classList.remove("bxs-sun");
+        iconeTrocaMobile.classList.add("bxs-moon");
+    }
+}
+
+
 function openNav() {
     document.getElementById("nav-mobile-lista").style.width = "270px";
 }
