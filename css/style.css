@@ -33,8 +33,9 @@
 }
 
 body.modo-escuro {
-    --bd-1st-color: #030716;
-    --bd-2nd-color: #492673;
+    /* --bd-1st-color: #030716; */
+    --bd-1st-color: #070F2B;
+    --bd-2nd-color: #1B1A55;
     --bd-3rd-color: #EFB758;
     --bd-4th-color: #C24229;
     --bd-5th-color: #E1DCC9;
@@ -42,10 +43,10 @@ body.modo-escuro {
 
     --font-1st-color: #FFFFFF;
     --font-2nd-color: #FFFFFF;
-    --font-3rd-color: #767171;
+    --font-3rd-color: #e9edfc;
     --font-4th-color: #EFB758;
     --font-5th-color: #FFFFFF;
-    --font-6th-color: hsl(267, 50%, 45%);
+    --font-6th-color: #d3dbf8;
     
     --transparent-color: rgba(255, 255, 255, 0.8);
 }
@@ -66,7 +67,7 @@ body {
     flex-direction: column;
     background-color: var(--bd-1st-color);
     color: var(--font-5th-color);
-    transition: background .3s linear;
+    transition: background .2s linear;
 }
 
 /* ::-webkit-scrollbar {
@@ -94,7 +95,7 @@ header {
     width: 100%;
     height: 60px;
     background-color: var(--bd-1st-color);
-    transition: background .3s linear;
+    transition: background .2s linear;
 }
 
 /* .nav-container {
@@ -205,6 +206,7 @@ main {
 .profissao {
     font-size: var(--font-normal-size);
     color: var(--font-3rd-color);
+    font-weight: 600;
 }
 
 .btn-contato {
@@ -215,10 +217,10 @@ main {
 .btn-contato > button {
     background-color: var(--bd-2nd-color);
     border: none;
-    padding: 10px;
-    font-size: var(--font-normal-size);
+    padding: 10px 25px;
+    font-size: 20px;
     color: var(--font-5th-color);
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -243,13 +245,14 @@ main {
     align-items: center;
     padding: 50px;
     margin-top: 150px;
-    height: 100vh;
+    padding: 150px 0;
+    height: auto;
     width: 100%;
     background-color: var(--bd-2nd-color);
 }
 
 .introducao {
-    width: 80%;
+    width: 75%;
     text-align: center;
     color: var(--font-5th-color);
     padding: 50px;
@@ -262,10 +265,16 @@ main {
 .introducao > h2 {
     font-weight: var(--font-semi-bold);
     color: var(--bd-3rd-color);
+    /* margin-bottom: 20px; */
 }
 
-.introducao > p {
-    margin-top: 20px;
+.resumo-sobre-mim {
+    margin-top: 40px;
+}
+
+.resumo-sobre-mim > p {
+    /* line-height: 30px; */
+    padding: 15px 0 0 0;
     font-size: var(--font-small-size);
     text-align: justify;
 }
@@ -373,6 +382,7 @@ main {
     font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 2px;
+    color: var(--font-5th-color);
 }
 
 .certificacoes {
@@ -1043,7 +1053,7 @@ main {
         margin: 10px;
         padding: 10px;
         font-size: 30px;
-        color: var(--bd-2nd-color);
+        color: var(--font-6th-color);
     }
     
     .certificados {
@@ -1369,7 +1379,7 @@ main {
     .timeline-content .date {
         position: absolute;
         top: -30px;
-        color: var(--bd-2nd-color);
+        color: var(--font-1st-color);
     }
 
 }
