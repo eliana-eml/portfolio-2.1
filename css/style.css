@@ -3,10 +3,11 @@
     /*== CORES PRINCIPAIS ===========================*/
     --bd-1st-color: #FFFFFF;
     --bd-2nd-color: #2d0064;
-    --bd-3rd-color: #EFB758;
+    --bd-3rd-color: hsl(38, 83%, 64%);
     --bd-4th-color: #C24229;
     --bd-5th-color: #E1DCC9;
     --bd-6th-color: #afa2c2;
+    --bd-foto-color: hsl(38, 85%, 68%);
 
     --font-1st-color: #000000;
     --font-2nd-color: #333333;
@@ -229,12 +230,15 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0 20px;
+    background-color: var(--bd-foto-color);
+    border-radius: 49% 51% 58% 42% / 43% 40% 60% 57%;
 }
 
 .foto-perfil-eliana {
     height: 350px;
     width: 350px;
-    border-radius: 100%;
+    object-fit: cover;
+    border-radius: inherit;
 }
 
 
