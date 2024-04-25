@@ -6,11 +6,11 @@ icone.onclick = function() {
     document.body.classList.toggle("modo-escuro");
 
     if (document.body.classList.contains("modo-escuro")) {
-        iconeTroca.classList.remove("bxs-moon");
+        iconeTroca.classList.remove("bx-moon");
         iconeTroca.classList.add("bxs-sun");
     } else {
         iconeTroca.classList.remove("bxs-sun");
-        iconeTroca.classList.add("bxs-moon");
+        iconeTroca.classList.add("bx-moon");
     }
 }
 

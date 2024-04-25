@@ -2,11 +2,11 @@
 
     /*== CORES PRINCIPAIS ===========================*/
     --bd-1st-color: #FFFFFF;
-    --bd-2nd-color: #2d0064;
+    --bd-2nd-color: #19184e;
     --bd-3rd-color: hsl(38, 83%, 64%);
     --bd-4th-color: #C24229;
     --bd-5th-color: #E1DCC9;
-    --bd-6th-color: #afa2c2;
+    --bd-6th-color: hsl(241, 53%, 90%);
     --bd-foto-color: hsl(38, 85%, 68%);
 
     --font-1st-color: #000000;
@@ -14,7 +14,7 @@
     --font-3rd-color: #767171;
     --font-4th-color: #D9D9D9;
     --font-5th-color: #FFFFFF;
-    --font-6th-color: #2d0064;
+    --font-6th-color: #19184e;
 
     /*== FONTE =====================================*/
     --font-body: 'Poppins', sans-serif;
@@ -133,6 +133,7 @@ header {
     margin: 0;
     padding: 0.25rem;
     overflow: hidden;
+    width: 90%;
 }
 
 #dark-mode {
@@ -239,6 +240,8 @@ main {
     width: 350px;
     object-fit: cover;
     border-radius: inherit;
+    /* filter: contrast(105%); */
+    /* filter: brightness(90%); */
 }
 
 
