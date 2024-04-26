@@ -106,26 +106,41 @@ function exibirListaFerramentas() {
 
 }
 
-// const modalViews = document.querySelectorAll('.modal-servicos'),
-//       modalBtns = document.querySelectorAll('.btn-modulo-servico'),
-//       modalCloses = document.querySelectorAll('.btn-fechar-popup')
+const btnOpenModalAnaliseDev = document.getElementById('btn-open-analise-dev');
+const btnOpenModalFrontEnd = document.getElementById('btn-open-front-end');
+const btnOpenModalBackEnd = document.getElementById('btn-open-back-end');
 
-// let modal = function(modalClick) {
-//     modalViews[modalClick].classList.add('active-modal')
-// }
+const modalAnalise = document.getElementById('modal-analise-dev');
+const modalFrontEnd = document.getElementById('modal-front-end');
+const modalBackEnd = document.getElementById('modal-back-end');
 
-// modalBtns.forEach((modalBtn, i) => {
-//     modalBtn.addEventListener('click', () => {
-//         modal(i)
-//     })
-// })
+const btnCloseModalAnalise = document.getElementById('btn-fechar-modal-analise');
+const btnCloseModalFrontEnd = document.getElementById('btn-fechar-modal-front');
+const btnCloseModalBackEnd = document.getElementById('btn-fechar-modal-back');
 
-// modalCloses.forEach((modalClose) => {
-//     modalClose.addEventListener('click', () => {
-//         modalViews.classList.remove('active-modal')
-//     })
-// })
+btnOpenModalAnaliseDev.addEventListener("click", () => {
+    modalAnalise.classList.add("open");
+})
 
+btnOpenModalFrontEnd.addEventListener("click", () => {
+    modalFrontEnd.classList.add("open");
+})
+
+btnOpenModalBackEnd.addEventListener("click", () => {
+    modalBackEnd.classList.add("open");
+})
+
+btnCloseModalAnalise.addEventListener("click", () => {
+    modalAnalise.classList.remove("open");
+})
+
+btnCloseModalFrontEnd.addEventListener("click", () => {
+    modalFrontEnd.classList.remove("open");
+})
+
+btnCloseModalBackEnd.addEventListener("click", () => {
+    modalBackEnd.classList.remove("open");
+})
 
 let projetoDiv = document.querySelector('.projetos-conteudo');
 
