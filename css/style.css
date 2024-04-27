@@ -3,11 +3,11 @@
     /*== CORES PRINCIPAIS ===========================*/
     --bd-1st-color: #FFFFFF;
     --bd-2nd-color: #19184e;
-    --bd-3rd-color: hsl(38, 83%, 64%);
+    --bd-3rd-color: #efb857;
     --bd-4th-color: #C24229;
     --bd-5th-color: #E1DCC9;
-    --bd-6th-color: hsl(241, 53%, 90%);
-    --bd-foto-color: hsl(38, 85%, 68%);
+    --bd-6th-color: hsl(240, 11%, 80%);
+    --bd-foto-color: #f3c068;
 
     --font-1st-color: #000000;
     --font-2nd-color: #333333;
@@ -15,6 +15,7 @@
     --font-4th-color: #D9D9D9;
     --font-5th-color: #FFFFFF;
     --font-6th-color: #19184e;
+    --font-7th-color: #D9D9D9;
 
     /*== FONTE =====================================*/
     --font-body: 'Poppins', sans-serif;
@@ -40,14 +41,15 @@ body.modo-escuro {
     --bd-3rd-color: #EFB758;
     --bd-4th-color: #C24229;
     --bd-5th-color: #E1DCC9;
-    --bd-6th-color: #afa2c2;
+    --bd-6th-color: #8e8ea4;
 
     --font-1st-color: #FFFFFF;
     --font-2nd-color: #FFFFFF;
-    --font-3rd-color: #e9edfc;
+    --font-3rd-color: #FFFFFF;
     --font-4th-color: #EFB758;
     --font-5th-color: #FFFFFF;
-    --font-6th-color: #d3dbf8;
+    --font-6th-color: #FFFFFF;
+    --font-7th-color: #D9D9D9;
     
     --transparent-color: rgba(255, 255, 255, 0.8);
 }
@@ -221,9 +223,14 @@ main {
     border: none;
     padding: 10px 25px;
     font-size: 20px;
-    color: var(--font-5th-color);
+    
     border-radius: 10px;
     cursor: pointer;
+}
+
+.btn-contato > button a {
+    text-decoration: none;
+    color: var(--font-5th-color);
 }
 
 .foto-perfil {
@@ -283,7 +290,7 @@ main {
     /* line-height: 30px; */
     padding: 15px 0 0 0;
     font-size: var(--font-small-size);
-    text-align: justify;
+    text-align: left;
 }
 
 .qualificacoes {
@@ -416,7 +423,7 @@ main {
 .curso {
     margin: 10px 30px;
     padding: 20px;
-    background-color: var(--font-4th-color);
+    background-color: var(--bd-5th-color);
     color: var(--bd-2nd-color);
     width: 100%;
     border-radius: 0px 20px 20px 20px;
@@ -427,7 +434,7 @@ main {
     font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 2px;
-    color: var(--font-6th-color);
+    color: var(--bd-2nd-color);
 }
 
 .desenvolvimento > h1 {
@@ -587,11 +594,11 @@ main {
     background-color: var(--bd-1st-color);
     color: var(--font-6th-color);
     border-radius: 10px;
-    border: var(--font-6th-color) 3px solid;
+    border: var(--bd-2nd-color) 3px solid;
 }
 
 .btn-modulo-servico:hover {
-    background-color: var(--font-6th-color);
+    background-color: var(--bd-2nd-color);
     color: var(--font-5th-color);
 }
 
@@ -625,14 +632,13 @@ main {
     text-align: left;
     flex-direction: column;
     background-color: var(--bd-1st-color);
-    width: 420px;
+    width: 500px;
     margin: 100px 25px;
-    padding: 30px 30px 60px;
+    padding: 10px 40px 60px;
     border-radius: 10px;
     height: auto;
     
     color: var(--font-1st-color);
-    box-shadow: 0px 5px 7px rgba(150, 146, 146, 0.2);
 }
 
 .modal-conteudo > h2 {
@@ -847,6 +853,11 @@ main {
 
 .rodape {
     margin: 50px 0 10px;
+}
+
+.rodape a {
+    color: var(--font-5th-color);
+    text-decoration: underline;
 }
 
 .side-menu {
@@ -1334,7 +1345,7 @@ main {
         width: 2px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: var(--font-4th-color);
+        background-color: var(--font-7th-color);
     }
     
     .timeline ul li {
@@ -1362,7 +1373,7 @@ main {
         position: absolute;
         height: 20px;
         width: 20px;
-        background-color: var(--font-4th-color);
+        background-color: var(--font-7th-color);
         border-radius: 50%;
         top: 0;
     }

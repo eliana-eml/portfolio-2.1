@@ -4,18 +4,18 @@
             "id": 0,
             "titulo": "Padaria By The Code",
             "img": "./img/capa-projeto-back-end-padaria.jpg",
-            "link": "#",
-            "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium.",
-            "linguagens": "Java, MySQL, JDBC, MVC, Maven, Orientação à Objetos, SQL DDL e DML, Javadoc",
-            "tipo": "Back-End - Desktop"
+            "link": "https://github.com/eliana-eml/padaria-by-the-code",
+            "descricao": "Projeto Integrador II - Sistema de Ponto de Venda (PDV). Projeto desenvolvido como projeto integrador do 2º semestre da faculdade.",
+            "linguagens": "Java, MySQL, JDBC, MVC, Maven, Orientação à Objetos, SQL DDL e DML, Java Swing, Javadoc, CRUD",
+            "tipo": "Back-End - Desktop - Java Swing"
         },
         {
             "id": 1,
             "titulo": "Weather Dash",
             "img": "./img/capa-projeto-front-end-weather-dash.jpg",
             "link": "https://eliana-eml.github.io/weather-dash/",
-            "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
-            "linguagens": "HTML, CSS, JavaScript",
+            "descricao": "Projeto web para consumo de API externa. O projeto baseia-se no consumo de uma API de clima, cujos dados são tratados e renderizados na tela para visualização de previsão do tempo.",
+            "linguagens": "HTML, CSS, JavaScript, JSON, API, Web",
             "tipo": "Front-End - Web"
         },
         {
@@ -23,16 +23,16 @@
             "titulo": "Jogo da Memória",
             "img": "./img/capa-projeto-front-end-jogo-da-memoria.jpg",
             "link": "https://eliana-eml.github.io/jogo-da-memoria/",
-            "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
-            "linguagens": "HTML, CSS, JavaScript, JSON",
+            "descricao": "Projeto Jogo da Memória. O projeto baseia-se em um jogo da mémoria interativo, utilizando as tecnologias de HTML, CSS e JavaScript, em plataforma web.",
+            "linguagens": "HTML, CSS, JavaScript, JSON, Web",
             "tipo": "Front-End - Web"
         },
         {
             "id": 3,
             "titulo": "Imobiliária ADIMO",
             "img": "./img/capa-projeto-front-end-imobiliaria.jpg",
-            "link": "#",
-            "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
+            "link": "https://eliana-eml.github.io/imobiliaria-adimo-ado-pw/",
+            "descricao": "O projeto consiste em uma página de apresentação e de realização de reservas de imóveis, além do cadastro e login do cliente. Feito de forma estática e para reforçar temas básicos como HTML, CSS e JavaScript, além de aplicação de responsividade.",
             "linguagens": "HTML, CSS, JavaScript",
             "tipo": "Front-End - Web"
         },
@@ -41,8 +41,8 @@
             "titulo": "Nota Fiscal",
             "img": "./img/capa-projeto-back-end-nota-fiscal.jpg",
             "link": "https://github.com/eliana-eml/rest-jdbc-project-nota-fiscal",
-            "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
-            "linguagens": "Java, MySQL, JDBC, MVC, SpringBoot, Maven",
+            "descricao": "Projeto Java feito utilizando JDBC. O projeto foi feito para um trabalho do meu curso de Desenvolvimento de Sistemas no SENAI-SP. O seu objetivo era criar uma REST API de 'Cadastro de Notas Fiscais e seus Itens', utilizando o JDBC e Banco de Dados Relacional MySQL.",
+            "linguagens": "Java, MySQL, JDBC, MVC, Spring Boot, Maven",
             "tipo": "Back-End - Web"
         },
         {
@@ -50,8 +50,8 @@
             "titulo": "Cadastro de Clientes",
             "img": "./img/capa-projeto-back-end-clientes.jpg",
             "link": "https://github.com/eliana-eml/java-web-servlet-project-cadastro-de-clientes",
-            "descricao": "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum impedit, consectetur consequatur sed praesentium eaque eligendi id dolorem molestiae optio.",
-            "linguagens": "Java, MySQL, JDBC, SpringBoot",
+            "descricao": "Projeto Java Web Servlet. O projeto foi feito para um trabalho do meu curso de Desenvolvimento de Sistemas no SENAI-SP. O objetivo do projeto era criar um projeto Web com Servlets para 'Cadastro de Clientes' e registrá-los num Banco de Dados Relacional MySQL.",
+            "linguagens": "Java, MySQL, JDBC, JSP, Servlet",
             "tipo": "Back-End - Web"
         }
     ]
