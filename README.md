@@ -4,7 +4,7 @@
 
 <br>
 
-> **[Clique aqui para seguir para a página](https://pages.github.com/](https://eliana-eml.github.io/portfolio-2.1/))**.
+> **[Clique aqui para seguir para a página](https://eliana-eml.github.io/portfolio-2.1/)**.
 
 <br>
 
