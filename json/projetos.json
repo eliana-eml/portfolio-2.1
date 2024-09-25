@@ -11,6 +11,15 @@
         },
         {
             "id": 1,
+            "titulo": "Nice Comics",
+            "img": "./img/capa-projeto-back-end-nice-comics.jpg",
+            "link": "https://github.com/eliana-eml/nice-comics",
+            "descricao": "Nice Comics é um projeto desenvolvido com o objetivo de criar uma API utilizando a tecnologia de Spring Boot para consumo através de um front-end de uma loja online de livros.",
+            "linguagens": "Java, MySQL, MVC, Spring Boot, Maven",
+            "tipo": "Back-End - Web"
+        },
+        {
+            "id": 2,
             "titulo": "Weather Dash",
             "img": "./img/capa-projeto-front-end-weather-dash.jpg",
             "link": "https://eliana-eml.github.io/weather-dash/",
@@ -19,21 +28,12 @@
             "tipo": "Front-End - Web"
         },
         {
-            "id": 2,
+            "id": 3,
             "titulo": "Jogo da Memória",
             "img": "./img/capa-projeto-front-end-jogo-da-memoria.jpg",
             "link": "https://eliana-eml.github.io/jogo-da-memoria/",
             "descricao": "Projeto Jogo da Memória. O projeto baseia-se em um jogo da mémoria interativo, utilizando as tecnologias de HTML, CSS e JavaScript, em plataforma web.",
             "linguagens": "HTML, CSS, JavaScript, JSON, Web",
-            "tipo": "Front-End - Web"
-        },
-        {
-            "id": 3,
-            "titulo": "Imobiliária ADIMO",
-            "img": "./img/capa-projeto-front-end-imobiliaria.jpg",
-            "link": "https://eliana-eml.github.io/imobiliaria-adimo-ado-pw/",
-            "descricao": "O projeto consiste em uma página de apresentação e de realização de reservas de imóveis, além do cadastro e login do cliente. Feito de forma estática e para reforçar temas básicos como HTML, CSS e JavaScript, além de aplicação de responsividade.",
-            "linguagens": "HTML, CSS, JavaScript",
             "tipo": "Front-End - Web"
         },
         {
